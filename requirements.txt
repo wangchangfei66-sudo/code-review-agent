@@ -1,0 +1,7 @@
+# Core project has no mandatory third-party dependencies.
+# Optional LLM review:
+openai>=1.0.0
+
+# Development / tests:
+pytest>=8.0.0
+ruff>=0.6.0
