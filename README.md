@@ -45,7 +45,7 @@ SummaryAgent
 汇总文件数、行数、问题数、风险等级
         │
         ▼
-LLMReviewAgent（可选）
+LLMReviewAgent
 基于 OPENAI_API_KEY 生成高阶代码审阅建议
         │
         ▼
@@ -207,11 +207,6 @@ pytest
 ruff check .
 ```
 
-## 示例成果描述
-
-可以把下面这段放到学校系统、项目申请、课程报告或 GitHub README 里：
-
-> 我构建了一个面向编程作业和课程项目的 Code Review Agent，用来解决代码调试耗时、错误定位困难和代码规范不统一的问题。系统采用多 Agent 协作流程：RepositoryScannerAgent 负责扫描项目目录并过滤无关文件；StaticAnalysisAgent 负责检查语法错误、硬编码密钥、异常处理、复杂函数和调试输出；TestSuggestionAgent 根据发现的问题自动生成测试建议；SummaryAgent 汇总风险等级和问题分布；LLMReviewAgent 可在设置 API key 后生成更高阶的重构建议。实际使用中，它可以在几十秒内完成一次课程项目的初步评审，自动输出 Markdown 报告，帮助我优先修复高风险问题，并补充边界值和异常路径测试。
 
 ## 后续可扩展方向
 
